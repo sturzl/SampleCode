@@ -1,0 +1,79 @@
+Bernoulli Verification Accuracy Crosss Verification				0.973255556434
+Smoothed Bernoulli Verification Accuracy Crosss Verification	 0.974052571193
+Polynomial Verification Accuracy Crosss Verification			0.974570474747
+Smoothed Polynomial Verification Accuracy Crosss Verification	0.975175014405
+TF-IDF Verification Accuracy Crosss Verification				0.973322446985
+
+Bernoulli Test Accuracy Crosss Verification						0.832785013566
+Smoothed Bernoulli Test Accuracy Crosss Verification			0.812753167902
+Polynomial Test Accuracy Crosss Verification					0.834923965991
+Smoothed Polynomial Test Accuracy Crosss Verification			0.813198853378
+TF-IDF Test Accuracy Crosss Verification						0.814134768832
+
+The most accurate modles are the Polynomial and Bernoulli predictors at 83.49 and 83.27 percent
+accuracy on the test data. They are followed by the their smoothed versions and the TF-IDF classifier
+which range from 81.27 to 81.41 percent accurracy. The confusion matricies for all models are below.
+
+LP, LF Labelled true, labelled false, CT CF classified true classified false
+students are considered true, faculty is considered false ex:
+
+   LT   LF
+CT TP   FP
+CF FN   TN
+
+
+ordered from most to least accurate, confusion matricies of the models based on cross validated test data:
+
+Polynomial Test Data Confusion Matrix
+   LT   LF
+CT 64  6
+CF 11  638
+
+
+Bernoulli Test Data Confusion Matrix
+   LT   LF
+CT 67  3
+CF 20  587
+
+
+TF-IDF  Test Data Confusion Matrix
+   LT   LF
+CT 70  0
+CF 20  565
+
+
+Smoothed Polynomial Test Data Confusion Matrix
+   LT   LF
+CT 66  4
+CF 11  629
+
+
+Smoothed Bernoulli Test Data Confusion Matrix
+   LT   LF
+CT 70  0
+CF 20  564
+
+
+
+
+Polynomial Cross Verified Accuracy with repetitions of Column 668
+
+Column 668 repetitions: 1
+Verification Accuracy			0.975175014405
+Test Accuracy					0.813198853378
+
+Column 668 repetitions: 2
+Verification Accuracy			0.975175014405
+Test Accuracy					0.814212299268
+
+Column 668 repetitions: 5
+Verification Accuracy			0.975292754906
+Test Accuracy					0.815238714092
+
+Column 668 repetitions: 10
+Verification Accuracy			0.975284371416
+Test Accuracy					0.81488616883
+
+Column 668 repetitions: 20
+Verification Accuracy			0.97527401111
+Test Accuracy					0.81482134075
